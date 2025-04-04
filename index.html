@@ -1,68 +1,75 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #0e0e0e;
-  color: #ffffff;
-}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bernhard Frank – Soundengineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <img src="assets/header-image.jpg" alt="Bernhard Frank im Studio" />
+      <div class="hero-text">
+        <h1>Bernhard Frank</h1>
+        <p>Soundengineer – 30+ Jahre Erfahrung</p>
+        <a href="#kontakt" class="cta-button">Jetzt anfragen</a>
+      </div>
+    </div>
+  </header>
 
-.hero {
-  position: relative;
-  text-align: center;
-}
+  <section class="services">
+    <h2>Services</h2>
+    <ul>
+      <li><strong>Mastering</strong> – Der letzte Schliff für dein Projekt – Streaming, Vinyl oder CD.<br />
+      <em>Einzeltrack: 89 €, ab 3 Tracks: 79 € pro Titel<br />Spezielle Anpassungen für Apple, Spotify, YouTube etc.: je 10 €</em></li>
 
-.hero img {
-  width: 100%;
-  height: auto;
-}
+      <li><strong>Mixing</strong> – Druckvoll, ausgewogen, individuell – inklusive Mastering.<br />
+      <em>Bis 24 Spuren: 250 €, ab 40 Spuren: 300 €</em></li>
 
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  text-align: center;
-}
+      <li><strong>Akustikberatung</strong> – Für Studios, Bands & Büros – bessere Akustik, bessere Arbeit.</li>
 
-.cta-button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #c9a338;
-  color: #0e0e0e;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-}
+      <li><strong>Live Sound</strong> – Jahrzehntelange Erfahrung im Touring – vom Club bis zur Festivalbühne.<br />
+      Eigene Mikrofonie und Outboard.</li>
 
-.services {
-  padding: 2rem;
-  background-color: #111111;
-}
+      <li><strong>Location Recording</strong> – Hochwertige Aufnahmen vor Ort – Konzerte, Ensembles, Sprachaufnahmen.</li>
 
-.services h2 {
-  color: #c9a338;
-}
+      <li><strong>Workshops</strong> – Praxisnah, verständlich, direkt anwendbar:<br />
+        – Für Musiklehrer an Schulen<br />
+        – Für Musiker, Bands<br />
+        – Für Manager & Organisationen: <em>„Richtiger Umgang mit dem Mikrofon“</em>
+      </li>
 
-.services ul {
-  list-style: none;
-  padding: 0;
-}
+      <li><strong>Videos</strong> – Kurze Tutorials & Tipps auf YouTube, TikTok & Instagram.</li>
+    </ul>
+  </section>
 
-.services li {
-  margin: 1rem 0;
-}
+  <section id="kontakt" class="kontakt">
+    <h2>Kontakt</h2>
+    <form>
+      <label for="name">Name*</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
 
-.kontakt {
-  text-align: center;
-  padding: 2rem;
-  background-color: #1c1c1c;
-}
+      <label for="email">E-Mail*</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #0e0e0e;
-  color: #666;
-}
+      <label for="telefon">Telefon (optional)</label><br />
+      <input type="tel" id="telefon" name="telefon" /><br /><br />
+
+      <p><strong>Hinweis:</strong> Bitte benenne deine Datei wie folgt: <em>Name_Titel_001.wav</em></p>
+      <a
+        href="https://www.dropbox.com/scl/fo/q82une8hjjk6bjv69zmc1/AEMT40tHA7b2JMs2DSMzm5s?rlkey=bf4r50mgptnky7ahhx8k8x2ye&st=y9p92roz&dl=0"
+        class="cta-button"
+        target="_blank"
+        >Datei hochladen</a
+      ><br /><br />
+
+      <input type="submit" value="Absenden" class="cta-button" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Bernhard Frank</p>
+  </footer>
+</body>
+</html>
