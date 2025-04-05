@@ -1,3 +1,24 @@
+/* Mini-Menü */
+.topnav {
+  background-color: #1a1a1a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.75rem;
+}
+
+.topnav a {
+  color: #c9a338;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.topnav a:hover {
+  background-color: #333;
+}
 /* Grundlayout */
 body {
   margin: 0;
