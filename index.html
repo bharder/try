@@ -1,77 +1,89 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bernhard Frank – Soundengineer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>try — by bharder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: radial-gradient(ellipse at center, #111 0%, #000 100%);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 8rem;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      transition: transform 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+    }
+
+    h1:hover {
+      transform: scale(1.05);
+      color: #0ff;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      color: #aaa;
+    }
+
+    .links {
+      margin-top: 2rem;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .links a {
+      color: #0ff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.2s ease;
+    }
+
+    .links a:hover {
+      color: #fff;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.875rem;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Mini-Navi -->
-  <nav class="topnav">
-    <a href="index.html">Start</a>
-    <a href="mastering.html">Mastering</a>
-    <a href="mixing.html">Mixing</a>
-    <a href="akustik.html">Akustikberatung</a>
-    <a href="workshops.html">Workshops</a>
-    <a href="videos.html">Videos</a>
-    <a href="live.html">Live Sound</a>
-    <a href="recording.html">Recording</a>
-  </nav>
-
-  <header>
-    <div class="hero">
-      <img src="assets/header-image.jpg" alt="Bernhard Frank im Studio" />
-      <div class="hero-text">
-        <h1>Bernhard Frank</h1>
-        <p>Soundengineer – 30+ Jahre Erfahrung</p>
-        <a href="#kontakt" class="cta-button">Jetzt anfragen</a>
-      </div>
+  <main>
+    <h1>try</h1>
+    <p>an experimental space by bharder</p>
+    <div class="links">
+      <a href="https://github.com/bharder" target="_blank">GitHub</a>
+      <a href="#projects">Projekte</a>
+      <a href="mailto:you@example.com">Kontakt</a>
     </div>
-  </header>
-
-  <section class="services">
-    <h2>Services</h2>
-    <div class="service-grid">
-      <div class="service-item"><img src="assets/icon-mastering.svg" alt=""><a href="mastering.html">Mastering</a></div>
-      <div class="service-item"><img src="assets/icon-mixing.svg" alt=""><a href="mixing.html">Mixing</a></div>
-      <div class="service-item"><img src="assets/icon-acoustics.svg" alt=""><a href="akustik.html">Akustikberatung</a></div>
-      <div class="service-item"><img src="assets/icon-workshop.svg" alt=""><a href="workshops.html">Workshops</a></div>
-      <div class="service-item"><img src="assets/icon-video.svg" alt=""><a href="videos.html">Videos</a></div>
-      <div class="service-item"><img src="assets/icon-live.svg" alt=""><a href="live.html">Live Sound</a></div>
-      <div class="service-item"><img src="assets/icon-recording.svg" alt=""><a href="recording.html">Location Recording</a></div>
-    </div>
-  </section>
-
-  <section id="kontakt" class="kontakt">
-    <h2>Kontakt</h2>
-    <form action="https://formsubmit.io/send/b.hard@mac.com" method="POST">
-      <label for="name">Name*</label><br />
-      <input type="text" id="name" name="name" required /><br /><br />
-
-      <label for="email">E-Mail*</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
-
-      <label for="telefon">Telefon (optional)</label><br />
-      <input type="tel" id="telefon" name="telefon" /><br /><br />
-
-      <p><strong>Hinweis:</strong> Bitte benenne deine Datei wie folgt: <em>Name_Titel_001.wav</em></p>
-      <a href="https://www.dropbox.com/scl/fo/q82une8hjjk6bjv69zmc1/AEMT40tHA7b2JMs2DSMzm5s?rlkey=bf4r50mgptnky7ahhx8k8x2ye&st=y9p92roz&dl=0" class="cta-button" target="_blank">Datei hochladen</a><br /><br />
-
-      <!-- SPAM-Schutz -->
-      <input name="_formsubmit_id" type="text" style="display:none">
-
-      <!-- Weiterleitung auf Danke-Seite -->
-      <input type="hidden" name="_redirect" value="https://bharder.github.io/try/danke.html" />
-
-      <input type="submit" value="Absenden" class="cta-button" />
-    </form>
-  </section>
-
+  </main>
   <footer>
-    <p>&copy; 2024 Bernhard Frank</p>
+    &copy; 2025 bharder
   </footer>
-
 </body>
 </html>
