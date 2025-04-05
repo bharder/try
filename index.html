@@ -69,10 +69,15 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     }
     .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .grid-row {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
-      margin-top: 3rem;
     }
     .service {
       background: #1e1e1e;
@@ -136,21 +141,25 @@
 
   <section>
     <div class="grid">
-      <div class="service service-large">
-        <h3>Mixing</h3>
-        <p>Dein Song in Profiqualität – präzise, musikalisch, ready for release.<br><strong>Ab 250 € inkl. Mastering</strong></p>
+      <div class="grid-row">
+        <div class="service service-large">
+          <h3>Mixing</h3>
+          <p>Dein Song in Profiqualität – präzise, musikalisch, ready for release.<br><strong>Ab 250 € inkl. Mastering</strong></p>
+        </div>
+        <div class="service service-large">
+          <h3>Mastering</h3>
+          <p>Klingt überall gut: Spotify, Radio, Vinyl – alles aus einer Hand.</p>
+        </div>
       </div>
-      <div class="service service-large">
-        <h3>Mastering</h3>
-        <p>Klingt überall gut: Spotify, Radio, Vinyl – alles aus einer Hand.</p>
-      </div>
-      <div class="service service-small">
-        <h3>Akustikberatung</h3>
-        <p>Von Homestudios bis Regieräumen – ich optimiere deinen Sound.</p>
-      </div>
-      <div class="service service-small">
-        <h3>Workshops & Coaching</h3>
-        <p>Lernen von über 30 Jahren Erfahrung – für Musiker, Producer & Teams.</p>
+      <div class="grid-row">
+        <div class="service service-small">
+          <h3>Akustikberatung</h3>
+          <p>Von Homestudios bis Regieräumen – ich optimiere deinen Sound.</p>
+        </div>
+        <div class="service service-small">
+          <h3>Workshops & Coaching</h3>
+          <p>Lernen von über 30 Jahren Erfahrung – für Musiker, Producer & Teams.</p>
+        </div>
       </div>
     </div>
   </section>
