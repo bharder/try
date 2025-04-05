@@ -46,7 +46,7 @@
 
   <section id="kontakt" class="kontakt">
     <h2>Kontakt</h2>
-    <form>
+    <form action="https://formsubmit.io/send/b.hard@mac.com" method="POST">
       <label for="name">Name*</label><br />
       <input type="text" id="name" name="name" required /><br /><br />
 
@@ -58,6 +58,12 @@
 
       <p><strong>Hinweis:</strong> Bitte benenne deine Datei wie folgt: <em>Name_Titel_001.wav</em></p>
       <a href="https://www.dropbox.com/scl/fo/q82une8hjjk6bjv69zmc1/AEMT40tHA7b2JMs2DSMzm5s?rlkey=bf4r50mgptnky7ahhx8k8x2ye&st=y9p92roz&dl=0" class="cta-button" target="_blank">Datei hochladen</a><br /><br />
+
+      <!-- SPAM-Schutz -->
+      <input name="_formsubmit_id" type="text" style="display:none">
+
+      <!-- Weiterleitung auf Danke-Seite -->
+      <input type="hidden" name="_redirect" value="https://bharder.github.io/try/danke.html" />
 
       <input type="submit" value="Absenden" class="cta-button" />
     </form>
