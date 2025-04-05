@@ -20,6 +20,7 @@
       padding: 5rem 2rem 4rem;
       background: linear-gradient(to bottom, #1a1a1a, #0e0e0e);
       text-align: center;
+      position: relative;
     }
     header h1 {
       font-size: 2.5rem;
@@ -44,6 +45,35 @@
     }
     .cta-button:hover {
       background: #eab308;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #0e0e0e;
+      padding: 0.75rem 1rem;
+      text-align: center;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #facc15;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+      nav a {
+        margin: 0.25rem;
+      }
     }
     section {
       padding: 4rem 2rem;
@@ -134,6 +164,13 @@
     <a href="#kontakt"><button class="cta-button">Jetzt anfragen</button></a>
   </header>
 
+  <nav>
+    <a href="#mixing">Mixing</a>
+    <a href="#mastering">Mastering</a>
+    <a href="#akustik">Akustik</a>
+    <a href="#workshops">Workshops</a>
+  </nav>
+
   <section class="intro">
     <img src="image.png" alt="Bernhard Frank Portrait" />
     <p>Ich bin Bernhard Frank. Seit über 30 Jahren mache ich Musikproduktionen besser – im Studio, live und für TV-Produktionen wie den BR. Jetzt bin ich für dein Projekt da.</p>
@@ -142,21 +179,21 @@
   <section>
     <div class="grid">
       <div class="grid-row">
-        <div class="service service-large">
+        <div id="mixing" class="service service-large">
           <h3>Mixing</h3>
           <p>Dein Song in Profiqualität – präzise, musikalisch, ready for release.<br><strong>Ab 250 € inkl. Mastering</strong></p>
         </div>
-        <div class="service service-large">
+        <div id="mastering" class="service service-large">
           <h3>Mastering</h3>
           <p>Klingt überall gut: Spotify, Radio, Vinyl – alles aus einer Hand.</p>
         </div>
       </div>
       <div class="grid-row">
-        <div class="service service-small">
+        <div id="akustik" class="service service-small">
           <h3>Akustikberatung</h3>
           <p>Von Homestudios bis Regieräumen – ich optimiere deinen Sound.</p>
         </div>
-        <div class="service service-small">
+        <div id="workshops" class="service service-small">
           <h3>Workshops & Coaching</h3>
           <p>Lernen von über 30 Jahren Erfahrung – für Musiker, Producer & Teams.</p>
         </div>
