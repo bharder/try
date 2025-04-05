@@ -1,3 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <path d="M10 50h10v10H10zM30 30h10v30H30zM50 40h10v20H50zM70 20h10v60H70z" fill="#000"/>
+  <path d="M10 50h10v10H10zM30 30h10v30H30zM50 40h10v20H50zM70 20h10v60H70z" fill="currentColor"/>
 </svg>
