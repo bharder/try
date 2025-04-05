@@ -5,24 +5,34 @@ body {
   color: #ffffff;
 }
 
-.hero {
+header {
   position: relative;
-  text-align: center;
 }
 
 .hero img {
   width: 100%;
-  height: auto;
+  height: 70vh;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
 }
 
 .hero-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 10%;
+  left: 5%;
   color: white;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  text-align: center;
+  text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
 }
 
 .cta-button {
@@ -37,27 +47,75 @@ body {
 }
 
 .services {
-  padding: 2rem;
-  background-color: #111111;
+  background-color: #111;
+  padding: 3rem 2rem;
 }
 
 .services h2 {
+  text-align: center;
   color: #c9a338;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
-.services ul {
-  list-style: none;
-  padding: 0;
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.services li {
-  margin: 1rem 0;
+.service-item {
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+.service-item img {
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.service-item a {
+  color: #c9a338;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .kontakt {
-  text-align: center;
-  padding: 2rem;
+  padding: 3rem 2rem;
   background-color: #1c1c1c;
+  text-align: center;
+}
+
+.kontakt input[type="text"],
+.kontakt input[type="email"],
+.kontakt input[type="tel"] {
+  width: 300px;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.kontakt input[type="submit"] {
+  margin-top: 1rem;
+  background-color: #c9a338;
+  color: #0e0e0e;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 footer {
@@ -65,20 +123,4 @@ footer {
   padding: 1rem;
   background-color: #0e0e0e;
   color: #666;
-}
-/* Unterseiten-Header im M4-Stil */
-.small-hero img {
-    height: 40vh;
-    object-fit: cover;
-    width: 100%;
-    display: block;
-}
-
-/* Text im kleineren Header */
-.hero-text h1 {
-    font-size: 2.5rem;
-}
-
-.hero-text p {
-    font-size: 1.25rem;
 }
